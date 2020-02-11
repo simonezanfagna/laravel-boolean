@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+.clearfix::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul li{
+  display: inline-block;
+}
