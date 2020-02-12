@@ -18,3 +18,66 @@ a{
 ul li{
   display: inline-block;
 }
+
+.container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (min-width: 576px){
+    max-width: 540px;
+  }
+
+  @media screen and (min-width: 768px){
+    max-width: 720px;
+  }
+
+  @media screen and (min-width: 992px){
+    max-width: 960px;
+  }
+  @media screen and (min-width: 1200px){
+    max-width: 1140px;
+  }
+}
+
+.container-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  .container-left{
+    flex-basis: 100%;
+    @media screen and (min-width: 992px){
+      flex-basis: 50%;
+    }
+  }
+  .container-right{
+    flex-basis: 100%;
+    @media screen and (min-width: 992px){
+      flex-basis: 50%;
+    }
+  }
+}
+
+.container-fluid{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.active{
+  border-bottom: 2px solid #61ce4e;
+}
+.active-mobile{
+  border-bottom: 1.5px solid white;
+}

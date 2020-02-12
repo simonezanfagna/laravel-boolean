@@ -12,7 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('home',[
-      'titolo' => 'Home'
-    ]);
-});
+  return view('home',[
+    'titolo' => 'Home'
+  ]);
+})->name('homepage');
+
+Route::get('faq',function (){
+  $data = [
+    'listaFaqSx' => config('dati.faqsSx'),
+    'listaFaqDx' => config('dati.faqsDx')
+  ];
+  return view('faq',[
+    'titolo' => 'FAQ'
+  ], $data);
+})->name('paginaFaq');
